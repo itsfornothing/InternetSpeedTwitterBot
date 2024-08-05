@@ -4,11 +4,10 @@ from selenium.webdriver.common.by import By
 from time import sleep
 
 PROMISED_DOWN = 21
-PROMISED_UP = 30
-CHROME_DRIVER_PATH = "/Users/user/.cache/selenium/chromedriver/mac-arm64/127.0.6533.88/chromedriver"
-X_USERNAME = "@itsfornothing12"
-X_EMAIL = "kalidmohamed566@gmail.com"
-X_PASSWORD = "Haha123@&$"
+PROMISED_UP = 10
+X_USERNAME = "Your User Name"
+X_EMAIL = "Your email"
+X_PASSWORD = "Your Password"
 
 # Keep Chrome browser open after program finishes
 CHROME_OPTION = webdriver.ChromeOptions()
@@ -43,7 +42,9 @@ class InternetSpeedTwitterBot:
         user_input.send_keys(X_USERNAME)
         sleep(1)
         user_input.send_keys(Keys.ENTER)
+        
 
+        # if X ask u email it's not always sometimes they ask ur email
         # sleep(2)
         # email_input = self.driver.find_element(By.NAME, 'text')
         # email_input.send_keys(X_EMAIL)
